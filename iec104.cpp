@@ -23,7 +23,7 @@ static bool running = true;
  */
 IEC104Server::IEC104Server()
 {
-	m_log = Logger::getLogger();
+    m_log = Logger::getLogger();
 
     /* create a new slave/server instance with default connection parameters and
      * default message queue size */
@@ -52,7 +52,7 @@ IEC104Server::IEC104Server()
     m_log->info("  w: %i", apciParams->w);
 
     /* set the callback handler for the clock synchronization command */
-    CS104_Slave_setClockSyncHandler(m_slave, clockSyncHandler, static_cast<void*>(this));
+    CS104_Slave_setClockSyncHandler(m_slave, clockSyncHandler, NULL);
 
     /* set the callback handler for the interrogation command */
     CS104_Slave_setInterrogationHandler(m_slave, interrogationHandler, NULL);
