@@ -112,9 +112,9 @@ a service from a terminal, or from the web API.
 
 Or
 
-2) Add the service from the web API:
+2) Add the service from the web GUI:
 
- - On the web API, go to the North tab
+ - On the web GUI, go to the North tab
  - Click on "Add +"
  - Select iec104 and give it a name, then click on "Next"
  - Change the default settings to your settings, then click on "Next"
